@@ -1,0 +1,111 @@
+{
+  "base": [
+    {
+      "image": "https://file.sarmayex.com/images/svg/BTC.svg",
+      "persion": "بیت کوین",
+      "english": "BTC",
+      "price": "1,827,200,000",
+      "percent": "3.49%-"
+    },
+    {
+      "image": "https://file.sarmayex.com/images/svg/USDT.svg",
+      "persion": "تتر",
+      "english": "USDT",
+      "price": "51,456",
+      "percent": "0.35%-"
+    },
+    {
+      "image": "https://file.sarmayex.com/images/svg/ETH.svg",
+      "persion": "اتریوم",
+      "english": "ETH",
+      "price": "102,168,009",
+      "percent": "4.4%-"
+    },
+    {
+      "image": "https://file.sarmayex.com/images/svg/SHIB.svg",
+      "persion": "هزارشیبا",
+      "english": "SHIB",
+      "price": "434.7",
+      "percent": "3.11%-"
+    },
+    {
+      "image": "https://file.sarmayex.com/images/svg/DOGE.svg",
+      "persion": "دوج کوین",
+      "english": "DOGE",
+      "price": "3,774.6",
+      "percent": "3.4%-"
+    }
+  ],
+  "items": [
+    {
+      "image": "https://nobitex.ir/_nuxt/img/comp.c150c5f.svg",
+      "persion": "کامپاند",
+      "english": "COMP",
+      "price": "2,839,521",
+      "percent": "4.04%-"
+    },
+    {
+      "image": "https://nobitex.ir/_nuxt/img/sol.155a780.svg",
+      "persion": "سولانا",
+      "english": "SOL",
+      "price": "3,210,004",
+      "percent": "0.03%-"
+    },
+    {
+      "image": "https://nobitex.ir/_nuxt/img/gmt.661e00d.svg",
+      "persion": "استپن ",
+      "english": "GMT",
+      "price": "12,737",
+      "percent": "3.03%-"
+    },
+    {
+      "image": "https://nobitex.ir/_nuxt/img/usdc.3fca0a2.svg",
+      "persion": "یو اس دی کوین",
+      "english": "USDC",
+      "price": "50,962,000",
+      "percent": "0.06%-"
+    },
+    {
+      "image": "https://nobitex.ir/_nuxt/img/dot.54c87cd.svg",
+      "persion": "پولیکادات",
+      "english": "DOT",
+      "price": "298,000",
+      "percent": "3.38%-"
+    },
+    {
+      "image": "https://nobitex.ir/_nuxt/img/ftm.26f9296.svg",
+      "persion": "فانتوم",
+      "english": "FTM",
+      "price": "18,750",
+      "percent": "1.17%-"
+    },
+    {
+      "image": "https://nobitex.ir/_nuxt/img/matic.b954dd0.svg",
+      "persion": "پالیگان",
+      "english": "MATIC",
+      "price": "45,674",
+      "percent": "1.49%-"
+    },
+    {
+      "image": "https://nobitex.ir/_nuxt/img/uni.c06a85b.svg",
+      "persion": "یونی سواپ",
+      "english": "UNI",
+      "price": "275,871",
+      "percent": "2.52%-"
+    },
+    {
+      "image": "https://nobitex.ir/_nuxt/img/dai.f917b1b.svg",
+      "persion": "دای",
+      "english": "DAI",
+      "price": "51,134",
+      "percent": "3.2%-"
+    },
+    {
+      "image": "https://nobitex.ir/_nuxt/img/trx.8a34e2e.svg",
+      "persion": "ترون",
+      "english": "TRX",
+      "price": "5,300",
+      "percent": "0.97%-"
+    }
+  ]
+}

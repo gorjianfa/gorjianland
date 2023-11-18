@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <!--<link rel="stylesheet" href="css/icon-font.css">-->
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon.svg" />
+    <title>ارز دیجیتال</title>
+  </head>
+  <body>
+    <header class="flex-justify header">
+      <div class="">
+        <img src="img/nobitex.svg" class="image-icon" />
+        <a href="#banner" class="navigation-list">Banner</a>
+        <a href="#Coin List" class="navigation-list margin">Coin List</a>
+        <a href="#Convert Box" class="navigation-list margin">Convert Box</a>
+        <a href="#Footer" class="navigation-list margin">Footer</a>
+      </div>
+      <div class="flex">
+        <div class="button">Sing Up</div>
+        <button class="button button-hover">Log In</button>
+      </div>
+    </header>
+    <main>
+      <!--coin list-->
+      <section class="coin-list-background">
+        <a href="#Coin List" id="Coin List" class="">
+          <div class="">
+            <span class="text-page">قیمت ارزهای دیجیتال</span>
+          </div>
+          <div class="Coin-list-border">
+            <table class="" id="tb1">
+              <!--thead-->
+              <thead class="border-top">
+                <tr class="">
+                  <th class="table-th-1">نام</th>
+                  <th class="table-th-2">آخرین قیمت</th>
+                  <th class="table-th-3">تغییر24h</th>
+                  <th class="table-th-4"></th>
+                  <th class="table-th-5"></th>
+                </tr>
+              </thead>
+              <!--tbody-->
+              <table id="base"></table>
+
+              <table id="tb2">
+                <div class="" id="more"></div>
+              </table>
+
+              <button class="button-more getBtn" id="myBtn">ادامه لیست</button>
+            </table>
+          </div>
+        </a>
+      </section>
+      <!--convert box-->
+      <section class="background-drop">
+        <a href="#Convert Box" class="" id="Convert Box"></a>
+        <div class="border-input" id="list">
+          <div class="flex-culm-right">
+            <span class="payment">پرداخت میکنید</span>
+            <div class="flex-justify border-input-1">
+              <input
+                type="number"
+                alt=""
+                placeholder="0"
+                class="click-input"
+                type="number"
+                oninput="ftmConverter(this.value)"
+                onchange="ftmConverter(this.value)"
+              />
+              <div class="flex">
+                <img src="img/iran.svg" alt="" class="iran-img" />
+                <span class="payment">تعداد</span>
+              </div>
+            </div>
+            <!--SVG-->
+            <div class="arrow">
+              <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+              <svg
+                class="arrow-svg"
+                viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.12 6.75H4.87v7.05l-2.05-3-1 .71 2.67 3.93a1.29 1.29 0 0 0 1 .59 1.29 1.29 0 0 0 1-.59l2.67-3.93-1-.71-2.06 3zM9.45.59 6.78 4.52l1 .71 2.06-3v7.02h1.25v-7l2 3 1-.71L11.55.59a1.23 1.23 0 0 0-2.1 0z"
+                />
+              </svg>
+            </div>
+
+            <!--option-->
+            <span class="payment"> دریافت میکنید </span
+            ><span>just fantom work</span>
+            <div class="border-input-1">
+              <div class="">
+                <select class="option-select" name="list">
+                  <option class="option-list" id="outputCoin">بیت کوین</option>
+                  <option class="option-list" id="outputTtr">تتر</option>
+                  <option class="option-list" id="outputEth">اتریوم</option>
+                  <option class="option-list" id="outputShiba">هزارشیبا</option>
+                  <option class="option-list" id="outputDog">دوج کوین</option>
+                  <option class="option-list" id="outputMatic">پالیگان</option>
+                  <option class="option-list" id="outputDai">دای</option>
+                  <option class="option-list" id="outputTrx">ترون</option>
+                  <option class="option-list" id="outputSol">سولانا</option>
+                  <option class="option-list" id="outputFtm">فانتوم</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=""><img src="img/bitcoin.svg" alt="" class="bitcoin" /></div>
+      </section>
+      <!--why nobitex-->
+      <section class="body-padding section-background">
+        <a href="#banner" id="banner">
+          <p class="Possibilities">چرا نوبیتکس را انتخاب کنیم؟</p>
+          <div class="flex-justify Possibilities-defin">
+            <div class="flex-justify-colum width">
+              <img src="img/simple.webp" class="Possibilities-image" />
+              <span class="Possibilities-1">ساده و کاربردی</span>
+              <span class="Possibilities-2">
+                محیط ساده و کاربردی نوبیتکس، معامله ارزدیجیتال را برای شما لذت
+                بخش خواهد کرد.
+              </span>
+            </div>
+            <div class="flex-justify-colum width margin-bottom">
+              <img src="img/buy.webp" class="Possibilities-image" />
+              <span class="Possibilities-1">خرید و فروش امن</span>
+              <span class="Possibilities-2">
+                اولویت نوبیتکس امنیت است. با خیالی آسوده و بدون نگرانی خرید و
+                فروش کنید
+              </span>
+            </div>
+            <div class="flex-justify-colum width">
+              <img src="img/quick.webp" class="Possibilities-image" />
+              <span class="Possibilities-1">پیشرو و سریع</span>
+              <span class="Possibilities-2">
+                تنوع رمزارزها و سرعت معاملات، نوبیتکس را جزو بهترین بازارهای
+                آنلاین قرار داده است.
+              </span>
+            </div>
+          </div></a
+        >
+      </section>
+
+      <!--the best possibility-->
+      <section class="backgrand-section body-padding">
+        <p class="Possibilities">بهترین امکانات خرید و فروش ارزهای دیجیتال</p>
+
+        <div class="flex">
+          <!--list-->
+          <div class="flex-culm-right">
+            <div class="flex">
+              <div class="border">
+                <img src="img/bag.webp" class="image-list" />
+              </div>
+              <div class="flex-culm-right">
+                <span class="Possibilities-1">مدیریت موجودی کیف پول</span>
+                <span class="p-list"
+                  >رمزارزهای دیجیتال محبوب را خرید و فروش کنید و در یکجا وضعیت
+                  موجودی خود را دنبال کنید</span
+                >
+              </div>
+            </div>
+
+            <!---->
+            <div class="flex">
+              <div class="border">
+                <img src="img/card.webp" class="image-list" />
+              </div>
+              <div class="flex-culm-right">
+                <span class="Possibilities-1">پرداخت با کارت‌های شتاب</span>
+                <span class="p-list"
+                  >معامله انواع رمزارز با تومان از طریق واریز و برداشت با
+                  کارت‌های بانکی عضو شتاب
+                </span>
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="border">
+                <img src="img/wallet.webp" class="image-list" />
+              </div>
+              <div class="flex-culm-right">
+                <span class="Possibilities-1">کیف پول امن </span>
+                <span class="p-list"
+                  >رمز اختصاصی کیف پول شما به صورت آفلاین نگهداری می شود و در
+                  برابر هک ایمن خواهد بود
+                </span>
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="border">
+                <img src="img/wage.webp" class="image-list" />
+              </div>
+              <div class="flex-culm-right">
+                <span class="Possibilities-1">کارمزد رقابتی </span>
+                <span class="p-list"
+                  >کارمزد خرید و فروش در نوبیتکس بسیار کم است و با بالاتر رفتن
+                  حجم معاملات کاهش می‌یابد
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!--POHONE IMAGE-->
+          <div class="">
+            <img src="img/Application.png" class="phone-img" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--footer part-->
+    <footer class="footer-background">
+      <a href="#Footer" id="Footer" class="">
+        <div class="flex-justify colm">
+          <!--footer icon-->
+          <div class="flex-justify-colum width-list">
+            <img src="img/nobitex.svg" class="image-icon-2" />
+            <div class="flex">
+              <a href="" class="divorse"
+                ><img src="img/twitter.svg" alt="" class="img-footer"
+              /></a>
+              <a href="" class="divorse"
+                ><img src="img/instagram.svg" alt="" class="img-footer" /></a
+              ><a href="" class="divorse"
+                ><img src="img/telegram.svg" alt="" class="img-footer"
+              /></a>
+            </div>
+
+            <div class="flex">
+              <p class="font-call">تماس با ما</p>
+              <p class="font-call">03265982</p>
+            </div>
+            <p class="font-call">
+              پشتیبانی آنلاین سایت ۲۴ ساعته ۷ روز هفته آماده پاسخگویی است.
+              پشتیبانی تلفنی نیز از ساعت ۸:۳۰ الی ۱۷ روزهای شنبه تا چهارشنبه و
+              ۸:۳۰ الی ۱۲:۳۰ پنجشنبه‌ها در دسترس شماست.
+            </p>
+            <div class="grid-col-2">
+              <img src="img/android.svg" alt="" class="img-android" />
+              <img src="img/cafe-bazar.svg" alt="" class="img-android" />
+              <img src="img/myket.svg" alt="" class="img-android" />
+              <img src="img/iphone.svg" alt="" class="img-android" />
+            </div>
+          </div>
+          <!--footer list-->
+
+          <div class="footer-list">
+            <div class="flex-culm-right">
+              <p class="list-head-text">نوبیتکس</p>
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle"> کارت هدیه</span>
+              </a>
+
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">شرایط ومقررات استفاده</span>
+              </a>
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">موقعیت شغلی</span>
+              </a>
+
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">پاک کردن کوکی</span>
+              </a>
+
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">دانلود اپلیکیشن</span>
+              </a>
+
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">پشتیبانی</span>
+              </a>
+
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">درباره ما</span>
+              </a>
+            </div>
+
+            <div class="flex-culm-right">
+              <p class="list-head-text">منابع و راهنمایی‌ها</p>
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">API مستندات </span>
+              </a>
+
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">راهنمای کار با نوبیتکس</span>
+              </a>
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">کارمزد در نوبیتکس </span>
+              </a>
+
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">دعوت از دوستان</span>
+              </a>
+
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">راهنمای احراز هویت</span>
+              </a>
+
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">درباره امنیت نوبیتکس</span>
+              </a>
+
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">بیت‌پین</span>
+              </a>
+            </div>
+
+            <div class="flex-culm-right">
+              <p class="list-head-text">آکادمی نوبیتکس</p>
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">از اینجا شروع کنید</span>
+              </a>
+
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">آخرین اخبار کریپتو</span>
+              </a>
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">چطور تتر بخریم؟</span>
+              </a>
+
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">اتریوم چیست؟</span>
+              </a>
+
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">NFT آشنایی با </span>
+              </a>
+
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">استیبل کوین چیست؟</span>
+              </a>
+
+              <a class="flex">
+                <span class="circle"></span>
+                <span class="text-circle">نقشه بازار</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <span class="copy-site"
+          >کلیه حقوق این سایت متعلق به ثمین رای است&#169;</span
+        >
+      </a>
+    </footer>
+    <script>
+      fetch("data.json")
+        .then((response) => response.json())
+        .then((data) => {
+          for (var i = 0; i < data.base.length; i++) {
+            let vimage = data.base[i].image;
+            let vpersion = data.base[i].persion;
+            let venglish = data.base[i].english;
+            let vprice = data.base[i].price;
+            let vpercent = data.base[i].percent;
+            document.querySelector("#base").innerHTML += `
+              <tbody class="">
+          <tr class="text-align">
+            <div class="">
+              <td class="td-name border-top">
+                <a href="" class="flex-3">
+                  <picture class="td-name-picture"
+                    ><img
+                      src="${vimage}"
+                      alt=""
+                      class="td-name-image"
+                      id=""
+                  /></picture>
+                  <div class="flex">
+                    <span class="td-name-bold">${vpersion}</span
+                    ><span class="td-name-small" id="english">${venglish}</span>
+                  </div>
+                </a>
+              </td>
+              <td class="td-pric border-top">
+              <div class="">  <div class="td-pric-bold">${vprice}</div></div>
+              </td>
+              <td class="td-chang border-top">
+                <div class=""> <div class="td-chang-color">${vpercent}</div></div>
+              </td>
+              
+              <td class="td-button border-top">
+                <div class="">
+                  <a href="" class="td-button-buy">معامله</a>
+                </div>
+              </td>
+            </div>
+          </tr>
+        </tbody>`;
+          }
+        });
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
