@@ -404,11 +404,7 @@ a {
     gap: 1.5rem; /* 12px */
   }
 }
-@media only screen and (max-width: 56.25em) {
-  .footer-list {
-    margin: 4rem 12rem 0 0;
-  }
-}
+
 .circle {
   padding: 0.35rem;
   border-radius: 9999px;

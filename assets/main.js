@@ -13,7 +13,7 @@ document.querySelector("#myBtn").addEventListener("click", () => {
 
 const getData = (count = 0, all = false) => {
   if (all) {
-    fetch("data.json")
+    fetch("assets/data.json")
       .then((response) => response.json())
       .then((data) => {
         for (var i = 0; i < data.items.length; i++) {
@@ -59,7 +59,7 @@ const getData = (count = 0, all = false) => {
         }
       });
   } else {
-    fetch("data.json")
+    fetch("assets/data.json")
       .then((response) => response.json())
       .then((data) => {
         const newData = data.items.slice(0, count);
@@ -108,7 +108,51 @@ const getData = (count = 0, all = false) => {
       });
   }
 };
-
+fetch("assets/data.json")
+  .then((response) => response.json())
+  .then((data) => {
+    for (var i = 0; i < data.base.length; i++) {
+      let vimage = data.base[i].image;
+      let vpersion = data.base[i].persion;
+      let venglish = data.base[i].english;
+      let vprice = data.base[i].price;
+      let vpercent = data.base[i].percent;
+      document.querySelector("#base").innerHTML += `
+              <tbody class="">
+          <tr class="text-align">
+            <div class="">
+              <td class="td-name border-top">
+                <a href="" class="flex-3">
+                  <picture class="td-name-picture"
+                    ><img
+                      src="${vimage}"
+                      alt=""
+                      class="td-name-image"
+                      id=""
+                  /></picture>
+                  <div class="flex">
+                    <span class="td-name-bold">${vpersion}</span
+                    ><span class="td-name-small" id="english">${venglish}</span>
+                  </div>
+                </a>
+              </td>
+              <td class="td-pric border-top">
+              <div class="">  <div class="td-pric-bold">${vprice}</div></div>
+              </td>
+              <td class="td-chang border-top">
+                <div class=""> <div class="td-chang-color">${vpercent}</div></div>
+              </td>
+              
+              <td class="td-button border-top">
+                <div class="">
+                  <a href="" class="td-button-buy">معامله</a>
+                </div>
+              </td>
+            </div>
+          </tr>
+        </tbody>`;
+    }
+  });
 function ftmConverter(valFtm) {
   document.getElementById("outputFtm").innerHTML = valFtm * 18312;
 }
