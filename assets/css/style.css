@@ -157,7 +157,9 @@ a {
 }
 .Possibilities-image {
   width: 100%;
-  max-width: 168.5px;
+  max-width: 92.5px;
+  height: 100%;
+  max-height: 95px;
 }
 .Possibilities-1 {
   color: #1e1b4b;
@@ -174,7 +176,7 @@ a {
   font-size: 1.5rem;
   font-weight: 500;
 
-  margin: 16px 0 16px 0;
+  margin: 16px ;
 }
 .width {
   width: 100%;
@@ -229,6 +231,8 @@ a {
 .bitcoin {
   width: 100%;
   max-width: 400px;
+  height: 100%;
+  max-height: 300px;
   position: absolute;
   left: 0;
   top: 0;
@@ -266,6 +270,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
 }
 .payment {
@@ -648,4 +653,24 @@ a {
   color: #fff;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+.button-convert {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #5b21b6;
+  background-color: #e9d5ff;
+  border-radius: 0.5rem;
+}
+.button-convert:hover {
+  background-color: #5b21b6;
+  color: #fff;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+.font-input {
+  font-size: 1.2rem;
+  color: #0369a1;
 }

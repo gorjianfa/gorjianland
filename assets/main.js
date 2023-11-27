@@ -153,6 +153,4 @@ fetch("assets/data.json")
         </tbody>`;
     }
   });
-function ftmConverter(valFtm) {
-  document.getElementById("outputFtm").innerHTML = valFtm * 18312;
-}
+

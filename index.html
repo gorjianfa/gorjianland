@@ -25,7 +25,7 @@
         <a href="#Footer" class="navigation-list margin">پاصفحه</a>
       </div>
       <div class="flex">
-        <div class="button">ثبت نام </div>
+        <div class="button">ثبت نام</div>
         <button class="button button-hover">ورود</button>
       </div>
     </header>
@@ -63,59 +63,46 @@
       <!--convert box-->
       <section class="background-drop">
         <a href="#Convert Box" class="" id="Convert Box"></a>
-        <div class="border-input" id="list">
-          <div class="flex-culm-right">
-            <span class="payment">پرداخت میکنید</span>
-            <div class="flex-justify border-input-1">
-              <input
-                type="number"
-                alt=""
-                placeholder="0"
-                class="click-input"
-                type="number"
-                oninput="ftmConverter(this.value)"
-                onchange="ftmConverter(this.value)"
-              />
-              <div class="flex">
-                <img src="assets/img/iran.svg" alt="" class="iran-img" />
-                <span class="payment">تعداد</span>
-              </div>
-            </div>
-            <!--SVG-->
-            <div class="arrow">
-              <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-              <svg
-                class="arrow-svg"
-                viewBox="0 0 16 16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.12 6.75H4.87v7.05l-2.05-3-1 .71 2.67 3.93a1.29 1.29 0 0 0 1 .59 1.29 1.29 0 0 0 1-.59l2.67-3.93-1-.71-2.06 3zM9.45.59 6.78 4.52l1 .71 2.06-3v7.02h1.25v-7l2 3 1-.71L11.55.59a1.23 1.23 0 0 0-2.1 0z"
-                />
-              </svg>
-            </div>
 
-            <!--option-->
-            <span class="payment"> دریافت میکنید </span
-            ><span>just fantom work</span>
-            <div class="border-input-1">
-              <div class="">
-                <select class="option-select" name="list">
-                  <option class="option-list" id="outputCoin">بیت کوین</option>
-                  <option class="option-list" id="outputTtr">تتر</option>
-                  <option class="option-list" id="outputEth">اتریوم</option>
-                  <option class="option-list" id="outputShiba">هزارشیبا</option>
-                  <option class="option-list" id="outputDog">دوج کوین</option>
-                  <option class="option-list" id="outputMatic">پالیگان</option>
-                  <option class="option-list" id="outputDai">دای</option>
-                  <option class="option-list" id="outputTrx">ترون</option>
-                  <option class="option-list" id="outputSol">سولانا</option>
-                  <option class="option-list" id="outputFtm">فانتوم</option>
-                </select>
-              </div>
-            </div>
+        <div class="border-input">
+          <div class="border-input-1">
+            <select name="badge" id="badge" class="option-select">
+              <option value="BTC">ببیت کوین</option>
+              <option value="ETH">اتریوم</option>
+              <option value="USDT">تتر</option>
+              <option value="DOGE">دوج کوین</option>
+              <option value="TRX">ترون</option>
+              <option value="DAI">دای</option>
+              <option value="UNI">یونی سواپ</option>
+              <option value="SOL">سولانا</option>
+              <option value="MATIC">پالیگان</option>
+              <option value="FTM">فانتوم</option>
+            </select>
+            <input
+              type="number"
+              id="amount"
+              class="click-input font-input"
+              placeholder="0"
+            />
           </div>
+          <div class="border-input-1">
+            <select name="to_badge" id="to_badge" class="option-select">
+              <option value="BTC">ببیت کوین</option>
+              <option value="ETH">اتریوم</option>
+              <option value="USDT">تتر</option>
+              <option value="DOGE">دوج کوین</option>
+              <option value="TRX">ترون</option>
+              <option value="DAI">دای</option>
+              <option value="UNI">یونی سواپ</option>
+              <option value="SOL">سولانا</option>
+              <option value="MATIC">پالیگان</option>
+              <option value="FTM">فانتوم</option>
+            </select>
+            <input type="number" id="final-value" class="font-input" disabled />
+          </div>
+          <button class="button-convert" id="button">تبدیل کن</button>
         </div>
+
         <div class="">
           <img src="assets/img/bitcoin.svg" alt="" class="bitcoin" />
         </div>
@@ -133,7 +120,7 @@
                 بخش خواهد کرد.
               </span>
             </div>
-            <div class="flex-justify-colum width margin-bottom">
+            <div class="flex-justify-colum width">
               <img src="assets/img/buy.webp" class="Possibilities-image" />
               <span class="Possibilities-1">خرید و فروش امن</span>
               <span class="Possibilities-2">
@@ -381,5 +368,6 @@
     </footer>
 
     <script src="assets/main.js"></script>
+    <script src="assets/convert.js"></script>
   </body>
 </html>
